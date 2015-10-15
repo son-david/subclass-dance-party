@@ -21,3 +21,21 @@ makeDancer.prototype.step = function() {
 makeDancer.prototype.move = function(speed) {
   this.$node.animate({left : 1250}, speed,"linear");
 };
+
+makeDancer.prototype.lineup = function() {
+  var index = window.dancers.indexOf(this);
+  var danceLine = (index/(dancers.length)) * $("body").width();
+  var height = $("body").height() * 0.5;
+  var styleSettings = {
+    top: height,
+    left: danceLine
+  };
+  this.$node.css(styleSettings);
+};
+
+makeDancer.prototype.removeSelf = function () {
+  if (this.$node.position().left > 1200) {
+    this.$node.remove();
+    window.health--;
+  }
+}

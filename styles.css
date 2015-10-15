@@ -31,15 +31,32 @@ body, a:link, a:visited, a:active{
 }
 
 .orc{
-  content:url("http://vignette3.wikia.nocookie.net/wowwiki/images/1/1e/3D-Orc.png/revision/latest?cb=20090804213114");
+  content:url("http://media.giphy.com/media/KWBHHKwJzkADe/giphy.gif");
   position:absolute;
   width : 70px;
   height: 90px;
 }
 
 .troll {
-  content:url("http://i129.photobucket.com/albums/p210/Anyhnie/wowd20/trol2.png");
+  content:url("https://38.media.tumblr.com/e4613739f15a5555e4fb4a86cfc556ee/tumblr_mu26k5W3io1so3sado1_r3_400.gif");
   position:absolute;
-  width : 70px;
-  height: 90px;
+  width : 100px;
+  height: 120px;
+}
+
+#tower {
+  content:url("http://pre00.deviantart.net/5431/th/pre/i/2014/254/2/5/castle_24_png_stock_by_jumpfer_stock-d7yt7td.png");
+  position: absolute;
+  width : 600px;
+  height : 800px;
+  top :200px;
+  left :1000px;
+}
+
+#infobar {
+  background-color : white;
+  width : 100px;
+  height : 80px;
+  margin : center;
+  font-style: black;
 }
