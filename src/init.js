@@ -38,8 +38,8 @@ $(document).ready(function() {
     $("body").append(troll.$node);
   }, 2000);
 
-  $(".orc").click(function() {
-    console.log ("dsfa");
-  });
+  $("body").on("click", "span", (function() {
+    $(this).remove();
+  }));
 
 });
