@@ -1,6 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
   window.health = 3;
+  window.counter = 0;
 
   window.setInterval(function() {
     $("#infobar").html("<p>You have "+window.health+" health!!</p>");
@@ -70,6 +71,7 @@ $(document).ready(function() {
 
   $("body").on("click", "span", (function() {
     $(this).remove();
+    window.counter++;
   }));
 
   window.setInterval(function(){
@@ -85,7 +87,7 @@ $(document).ready(function() {
       for (var i =0; i < dancers.length; i++) {
         dancers[i].stop();
       }
-      $("#infobar").html("<p>YOU LOSE!!!</p> <p>refresh page to try again</p>");
+      $("#infobar").html("<p>YOU LOSE!!!</p><p>You got "+window.counter+" points.</p><p>refresh page to try again</p>");
     }
   }, 500);
   
