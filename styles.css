@@ -44,6 +44,21 @@ body, a:link, a:visited, a:active{
   height: 120px;
 }
 
+.beast {
+  content:url("http://hydra-media.cursecdn.com/wow.gamepedia.com/c/c3/Bestiary_Thumb_Basilisk.gif");
+  position:absolute;
+  width : 200px;
+  height: 110px;
+}
+
+.dwarf {
+  content:url("http://vignette2.wikia.nocookie.net/wowwiki/images/e/e4/Dwarf_male250x.gif/revision/latest?cb=20120511203039");
+  position:absolute;
+  width : 140px;
+  height: 140px;
+}
+
+
 #tower {
   content:url("http://pre00.deviantart.net/5431/th/pre/i/2014/254/2/5/castle_24_png_stock_by_jumpfer_stock-d7yt7td.png");
   position: absolute;
@@ -54,9 +69,10 @@ body, a:link, a:visited, a:active{
 }
 
 #infobar {
-  background-color : white;
-  width : 100px;
-  height : 80px;
+  background-color : none;
+  font-size: 30px;
+  position: absolute;
+  left: 700px;
   margin : center;
-  font-style: black;
+  color : black;
 }
